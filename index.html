@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Realstate | By Ritesh Singh</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+
+    <header class="header" id="home">
+        <nav class="navbar">
+            <div class="container flex between">
+
+                <div class="logo">
+                    <a href="">Real<span>state</span></a>
+                    <p>By Ritesh Singh</p>
+                </div>
+                <ul class="menu flex g-2" id="main_menu">          
+                    <li><a href="#home" class="menu_link">Home</a></li>
+                    <li><a href="#explore" class="menu_link">Explore</a></li>
+                    <li><a href="#services" class="menu_link">Services</a></li>
+                    <li><a href="" class="menu_link">Contact</a></li>
+                    <li class="lg-hidden"><a href="#services" class="menu_link">Services</a></li>
+                    <li class="lg-hidden"><a href="#services" class="menu_link">Services</a></li>
+                </ul>
+                <ul class="right_menu menu flex g-2">
+                    <li><a href="" class="menu_link">Sign In</a></li>
+                    <li><a href="" class="menu_link btn_signup">Sign Up</a></li>
+                    <a onclick="show_menu()" class="toggle sm-show"><i class="bx bx-menu"></i></a>
+                </ul>
+            </div>
+        </nav>
+        <section class="hero">
+            <div class="content">
+                <h1>Your prefect home is waiting for you</h1>
+                <p>Discover your dream home with us. Unmatched expertise, personalized service, and a commitment to your satisfaction. Your perfect home awaits!</p>
+                <a class="btn_explore" href="#explore">
+                    <i class='bx bx-chevrons-down bx-tada' ></i>
+                    Explore more</a>
+            </div>
+            <div class="outer_box">
+                <div class="search">
+                    <div class="input">
+                        <label for="location">Location</label>
+                        <input type="text" placeholder="Enter a location">
+                    </div>
+                    <div class="input">
+                        <label for="Type">Type</label>
+                        <select name="type">
+                            <option value="apartment">Apartment</option>
+                            <option value="house">House</option>
+                            <option value="condo">Condo</option>
+                            <option value="townhouse">Townhouse</option>
+                        </select>
+                        
+                    </div>
+                    <div class="input">
+                        <label for="location">Price Range</label>
+                        <select name="price">
+                            <option value="200k-300k">200k - 300k</option>
+                            <option value="300k-400k">300k - 400k</option>
+                            <option value="400k-500k">400k - 500k</option>
+                            <option value="500k-600k">500k - 600k</option>
+                        </select>
+                        
+                    </div>
+                    <div class="input">
+                        <button class=" search_btn"> <i class='bx bx-search'></i> Search</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </header>
+
+    <section class="about">
+        <div class="grid g-2 container">
+            <div class="col-6 col-md-12 col-sm-12">
+                <img src="./img/home.jpg" alt="">
+            </div>
+            <div class="col-6 col-md-12 col-sm-12">
+                <h2>we are the most trusted <span>Real estate agent</span></h2>
+                <p>we have helped a lot of people to find their dream home.</p>
+                <ul class="about_list">
+                    <li>
+                        <i class='bx bxs-check-circle'></i>
+                        <span>678k buys works with us.</span>
+                    </li>
+                    <li>
+                        <i class='bx bxs-check-circle'></i>
+                        <span>professional and exprience Resources.</span>
+                    </li>
+                    <li>
+                        <i class='bx bxs-check-circle'></i>
+                        <span>provide the best services to users</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="homes container" id="explore">
+        <div class="section_heading">
+            <h2>Special Homes</h2>
+            <p>Explore our curated collection of unique and luxurious homes, tailored to elevate your living experience</p>
+        </div>
+        <div class="grid g-2">
+            <div class="col-4 col-md-12 col-sm-12">
+                <div class="home_card">
+                    <div class="img">
+                        <img src="./img/home.jpg" alt="">
+                    </div>
+                    <div class="flex between">
+                        <h3>$4,600,000</h3>
+                        <span class="city">ney york</span>
+                    </div>
+                    <div class="flex feature">
+                        <div class="feature_item">2 Bedroom</div>
+                        <div class="feature_item">3 Swimming pool</div>
+                        <div class="feature_item">1 Garden</div>
+                        <div class="feature_item">2 Garage space</div>
+                        <a href="#" class="btn_view_details">View Details</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4 col-md-12 col-sm-12">
+                <div class="home_card">
+                    <div class="img">
+                        <img src="./img/home.jpg" alt="">
+                    </div>
+                    <div class="flex between">
+                        <h3>$4,600,000</h3>
+                        <span class="city">ney york</span>
+                    </div>
+                    <div class="flex feature">
+                        <div class="feature_item">2 Bedroom</div>
+                        <div class="feature_item">3 Swimming pool</div>
+                        <div class="feature_item">1 Garden</div>
+                        <div class="feature_item">2 Garage space</div>
+                        <a href="#" class="btn_view_details">View Details</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4 col-md-12 col-sm-12">
+                <div class="home_card">
+                    <div class="img">
+                        <img src="./img/home.jpg" alt="">
+                    </div>
+                    <div class="flex between">
+                        <h3>$4,600,000</h3>
+                        <span class="city">ney york</span>
+                    </div>
+                    <div class="flex feature">
+                        <div class="feature_item">2 Bedroom</div>
+                        <div class="feature_item">3 Swimming pool</div>
+                        <div class="feature_item">1 Garden</div>
+                        <div class="feature_item">2 Garage space</div>
+                        <a href="#" class="btn_view_details">View Details</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4 col-md-12 col-sm-12">
+                <div class="home_card">
+                    <div class="img">
+                        <img src="./img/home.jpg" alt="">
+                    </div>
+                    <div class="flex between">
+                        <h3>$4,600,000</h3>
+                        <span class="city">ney york</span>
+                    </div>
+                    <div class="flex feature">
+                        <div class="feature_item">2 Bedroom</div>
+                        <div class="feature_item">3 Swimming pool</div>
+                        <div class="feature_item">1 Garden</div>
+                        <div class="feature_item">2 Garage space</div>
+                        <a href="#" class="btn_view_details">View Details</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4 col-md-12 col-sm-12">
+                <div class="home_card">
+                    <div class="img">
+                        <img src="./img/home.jpg" alt="">
+                    </div>
+                    <div class="flex between">
+                        <h3>$4,600,000</h3>
+                        <span class="city">ney york</span>
+                    </div>
+                    <div class="flex feature">
+                        <div class="feature_item">2 Bedroom</div>
+                        <div class="feature_item">3 Swimming pool</div>
+                        <div class="feature_item">1 Garden</div>
+                        <div class="feature_item">2 Garage space</div>
+                        <a href="#" class="btn_view_details">View Details</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4 col-md-12 col-sm-12">
+                <div class="home_card">
+                    <div class="img">
+                        <img src="./img/home.jpg" alt="">
+                    </div>
+                    <div class="flex between">
+                        <h3>$4,600,000</h3>
+                        <span class="city">ney york</span>
+                    </div>
+                    <div class="flex feature">
+                        <div class="feature_item">2 Bedroom</div>
+                        <div class="feature_item">3 Swimming pool</div>
+                        <div class="feature_item">1 Garden</div>
+                        <div class="feature_item">2 Garage space</div>
+                        <a href="#" class="btn_view_details">View Details</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="services container" id="services">
+        <div class="section_heading">
+            <h2>Our Services</h2>
+            <p>Comprehensive real estate solutions tailored to your needs. Buying, selling, and investing made seamless and rewarding</p>
+        </div>
+        <div class="grid g-2">
+            <div class="col-4 col-md-12 col-sm-12">
+                <div class="services_card">
+                    <div class="icon">
+                        <i class='bx bx-buildings'></i>
+                    </div>
+                    <h3>Buy</h3>
+                    <p>Unlock your dream home with our expert guidance, vast listings, and personalized support for a seamless buying experience.</p>
+                </div>
+            </div>
+            <div class="col-4 col-md-12 col-sm-12">
+                <div class="services_card">
+                    <div class="icon">
+                        <i class='bx bxs-badge-dollar'></i>
+                    </div>
+                    <h3>Invest</h3>
+                    <p>Grow your portfolio with confidence. Our investment expertise, market insights, and personalized advice pave the way for lucrative real estate ventures.                    </p>
+                </div>
+            </div>
+            <div class="col-4 col-md-12 col-sm-12">
+                <div class="services_card">
+                    <div class="icon">
+                        <i class='bx bxs-analyse'></i>
+                    </div>
+                    <h3>Sell</h3>
+                    <p>Maximize your property's value. We market strategically, negotiate effectively, and handle the details for a successful and profitable sale.                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="video container">
+        <video src="./img/MY_VIDEO.webm" autoplay muted loop></video>
+    </section>
+
+
+    <section class="why_us container">
+        <div class="grid g-2">
+            <div class="col-6 col-md-12 col-sm-12">
+                <div class="img_box">
+                    <img src="./img/home.jpg" alt="">
+                    <video autoplay loop src="./img/MY_VIDEO.webm" muted></video>
+                </div>
+            </div>
+
+            <div class="col-6 col-md-12  col-sm-12 content">
+                <h2>Why You Choose Us</h2>
+                <p>Choose us for unparalleled expertise, personalized service, and a commitment to finding your dream home. Your satisfaction is our priority</p>
+                <a href="#">Learn More</a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="grid g-2 main_footer container">
+            <div class="col-3 col-md-6 col-sm-12">
+                
+                <div class="logo">
+                    <a href="">Real<span>state</span></a>
+                    <p>By Ritesh Singh</p>
+                </div>
+                <p>Explore, Connect, Thrive. Your journey in real estate starts here.</p>
+            </div>
+            <div class="col-3 col-md-6 col-sm-12">
+                <ul class="footer_link">
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Properties</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+                
+            </div>
+            <div class="col-3 col-md-6 col-sm-12">
+                <ul class="footer_link">
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Testimonials</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+            </div>
+            <div class="col-3 col-md-6 col-sm-12">
+                <ul class="footer_link">                    
+                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="#">Gallery</a></li>
+                    <li><a href="#">Specials</a></li>
+                    <li><a href="#">Careers</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer_bottom">
+            <div class="grid container">
+                <div class="col-6 col-sm-12">
+                    <p>Made By <span>❤</span>  Ritesh</p>
+                </div>
+                <div class="col-6 col-sm-12">
+                    <p class="right">5 <sup>th</sup> Semester CSE</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <a href="#home" class="back_to_top" >
+        <i class="bx bx-arrow-to-top"></i>
+    </a>
+
+    <script>
+        function show_menu(){
+            document.querySelector('#main_menu').classList.toggle('active')
+        }
+
+
+    </script>
+</body>
+</html>
